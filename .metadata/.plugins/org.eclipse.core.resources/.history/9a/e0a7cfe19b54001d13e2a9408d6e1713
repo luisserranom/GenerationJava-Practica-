@@ -1,0 +1,48 @@
+package cl.generation25102022;
+
+public class Funciones1 {
+
+	public static void main(String[] args) {
+		//  metodos
+		// 4 convinaciones
+		//seccion main para llamar metodos
+		
+		//llamar a un metodo
+		System.out.println("-----metodo1----");
+		nombreMetodo();
+		System.out.println("-----metodo2----");
+		Metodo2("Luchooo");
+		System.out.println("-----metodo3----");
+		Metodo3(3);
+		System.out.println("-----metodo4----");
+		Metodo4(3, 9.9f);
+		
+		
+		
+		
+
+	}
+	//defincion o estructura de un metodo
+	//void-> el metodo no retorna ningun valor
+	public static void nombreMetodo() {
+		System.out.println("estoy dentro del metodo inicial.....");
+		
+	}
+	
+	public static void Metodo2(String nombre) {
+		System.out.println("soy" + nombre);
+		
+	}
+	
+	public static void Metodo3(Integer numero) {
+		System.out.println("soy el numero " + numero);
+		
+	}
+	public static void Metodo4(Integer numero, float numero2) {
+		System.out.println("soy el numero " + numero);
+		System.out.println("soy el numero2 " + numero2);
+		
+	}
+	
+
+}

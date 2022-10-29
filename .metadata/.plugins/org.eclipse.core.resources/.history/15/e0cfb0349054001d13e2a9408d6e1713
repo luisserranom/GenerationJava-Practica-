@@ -1,0 +1,25 @@
+package cl.generation25102022;
+ import java.util.HashMap;
+public class HashMapTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap<Integer,String> relatores = new HashMap<Integer,String>();
+		
+		
+		//2.agregar valor al map
+		relatores.put(1,"luis");
+		relatores.put(2,"javier");
+		relatores.put(3,"fran");
+		relatores.put(4,"julian");
+		relatores.put(1,"rocio");//si existe esa clave se sobreescribe el ultimo valor o values ingresado
+		
+		System.out.println("map: " + relatores);
+		
+		//3-tamaño del map
+		System.out.println(relatores.size());
+
+	}
+
+}

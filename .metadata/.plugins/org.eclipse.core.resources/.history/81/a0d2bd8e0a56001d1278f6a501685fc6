@@ -1,0 +1,32 @@
+package cl.generation.f20221027;
+
+public class  actividadPerimetroAre{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+  
+  // solcitia el programa
+  // area de un triangulo (base * altura)/2
+  // area de un rectangulo base * altura
+  
+   // opcional
+   // area de un cuuadrado base * base
+
+	public static void menu() {
+		System.out.println("**************************");
+		System.out.println("*          Menú          *");
+		System.out.println("**************************\n");
+		System.out.println("Escoja operación deseada:");
+		System.out.println("1. TRIANGULO");
+		System.out.println("2. RECTANGULO");
+		System.out.println("3. CIRCUNFERENCIA");
+		System.out.println("0. SALIR");
+
+		System.out.println("**************************\n");
+	}
+  
+  Scanner scanner = new Scanner(System.in);
+	
+}

@@ -1,0 +1,22 @@
+package cl.generation25102022;
+
+import java.util.HashSet;
+
+public class ArregloHashSet {
+
+	public static void main(String[] args) {
+		// definicion seo o hashset
+		// HashSet<tipodato> nombre_array = newHash <tipodato>
+		HashSet<String> grupo6 = new HashSet<String>();
+		
+		//2 agregar elementos
+		
+		grupo6.add("javier");
+		grupo6.add("julian");
+		grupo6.add("francisca");
+		grupo6.add("rocio");
+		grupo6.add("luis");
+		System.out.println(grupo6);
+	}
+
+}

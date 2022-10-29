@@ -1,0 +1,39 @@
+package cl.generation;
+
+import java.util.Arrays;
+
+public class actividadArray {
+
+	public static void main(String[] args) {
+		//Escribe un arreglo de tamaño de 10,con numeros positivos y negativos,captura en maximo y minimo
+		//
+		int[] numeros = new  int [10];
+		
+		numeros[0] = -1;
+		numeros[1] = -5;
+		numeros[2] = -4;
+		numeros[3] = 3;
+		numeros[4] = 1;
+		numeros[5] = 4;
+		numeros[6] = 0;
+		numeros[7] = 9;
+		numeros[8] = -11;
+		numeros[9] = 11;
+		int contadorP = 0 ;
+		int contadorN = 0 ;
+		
+		for
+		
+		for (int i = numeros.length; i>0; i--) {
+			//System.out.println(Arrays.toString(numeros));
+			if(numeros.length >=0) {
+				System.out.println("es mayor que 0 ");
+				contadorP = contadorP + 1;
+				
+			}
+		}
+		
+
+	}
+
+}

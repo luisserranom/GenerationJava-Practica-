@@ -1,0 +1,27 @@
+package cl.generation.f20221027;
+
+public class menu {
+
+	public static void main(String[] args) {
+		//Menu de opciones
+		//calculadores con 4 operaciones basica
+		//solicitar y capturar 2 numeros float
+		//imprimir resultados yguardar en una vriable 
+		//ofrecer opciones de repeticiones (Bucles)
+		//definir los metodos
+		//validaciones
+		//terminar la ejecucion
+		//limpiar lar variables
+		menu();
+	}
+	public static void menu() {
+		System.out.println(" ************");
+		System.out.println("menu");
+		System.out.println(" ************");
+		System.out.println("*1 sumar *");
+		System.out.println("*2 restar *");
+		System.out.println("*3 multiplicar *");
+		System.out.println("*1 dividir *");
+	}
+
+}

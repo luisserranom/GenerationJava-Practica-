@@ -1,0 +1,48 @@
+package cl.generation26102022;
+
+import java.util.Scanner;
+
+public class ActividadExtracionDatos {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ingrese su nombre \n");
+		String nombre = sc.next();
+		System.out.println("ingrese su primer apellido \n");
+		String pApellido = sc.next();
+		System.out.println("ingrese su segundo apellido \n");
+		String sApellido = sc.next("Z");
+		System.out.println("ingrese su direccion \n");
+		String direccion = sc.next();
+		System.out.println("ingrese su email \n");
+		String email = sc.next();
+		System.out.println("ingrese su numero \n");
+		String numero = sc.next();
+
+		sc.close();
+		String fullName = getfullName(nombre, pApellido, sApellido, direccion, email, numero);
+		System.out.println(fullName);
+
+	}
+
+	/**
+	 * 
+	 * @param mNombre
+	 * @param mPApellido
+	 * @param mSApellido
+	 * @param mDireccion
+	 * @param email
+	 * @param numero
+	 * @return
+	 */
+	public static String getfullName(String mNombre, String mPApellido, String mSApellido, String mDireccion,
+			String email, String numero) {
+		String nombreCompleto = "----------------------------------------------------" + "\n Tus datos uwu"
+				+ "\n Su nombre completo es:" + " " + mNombre + " " + mPApellido + " " + mSApellido
+				+ "\n Su direccion es:" + " " + mDireccion + "\n Su email es:" + " " + email
+				+ "\n Su numero de telefono es:" + " " + numero
+				+ "\n ----------------------------------------------------";
+		return nombreCompleto;
+	}
+
+}

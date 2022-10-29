@@ -1,0 +1,90 @@
+package cl.generation26102022;
+
+import java.util.Scanner;
+
+public class ActicidadDatosYIMC {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Float IMC = calculoIMC();
+		nivelIMC(IMC);
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ingrese su nombre \n");
+		String nombre = sc.next();
+		System.out.println("ingrese su primer apellido \n");
+		String pApellido = sc.next();
+		System.out.println("ingrese su segundo apellido \n");
+		String sApellido = sc.next();
+		System.out.println("ingrese su edad \n");
+		String edad = sc.next();
+
+		sc.close();
+		String fullName = getfullName(nombre, pApellido, sApellido, edad, IMC, nivelIMC());
+		System.out.println(fullName);
+
+	}
+
+	// Funcion para el cálculo de IMC
+	public static Float calculoIMC() {
+		Scanner scanner = new Scanner(System.in);
+		// int edad = 0;
+		Float kilos = 0F;
+		Float estatura = 0F;
+
+		// edad
+
+		// System.out.println("Edad ingresada: " + edad);
+
+		// peso
+		do {
+			System.out.println("Ingresa tu peso en kilos: ");
+			kilos = scanner.nextFloat();
+		} while (kilos < 40 || kilos > 150); // mientras se cumpla esa condicion se seguira entrando en el do
+
+		System.out.println("Peso ingresado: " + kilos + " kg");
+
+		// estatura
+
+		do {
+			System.out.println("Ingresa tu estatura en metros: ");
+
+		} while (estatura < 1.4 || estatura > 2.10); // mientras se cumpla esa condicion se seguira entrando en el do
+		estatura = scanner.nextFloat(); // no es necesairo poner F de flotante porque se esta comparando
+		// el contenido
+
+		System.out.println("Estatura ingresada: " + estatura + " m");
+
+		Float imc = kilos / (estatura * estatura);
+		scanner.close();
+		return imc;
+
+	}
+
+	// Nivel IMC
+	public static void nivelIMC(Float IMC) {
+		/*
+		 * Por debajo de 18.5 Bajo peso 18.5 24.9 Normal 25.0 29.9 Sobrepeso 30.0 o m s
+		 * Obeso
+		 */
+		if (IMC < 18.5F) {
+			System.out.println("El paciente esta bajo peso");
+		} else if (IMC >= 18.5F && IMC < 25) {
+			System.out.println("Normal peso");
+		} else if (IMC >= 25F && IMC < 30) {
+			System.out.println("Sobre peso");
+		} else {
+			System.out.println("Obeso");
+		}
+	}
+
+	public static String getfullName(String mNombre, String mPApellido, String mSApellido, String medad, Float mIMC,
+			String mNivel) {
+		String nombreCompleto = "----------------------------------------------------" + "\n "
+				+ "\n Su nombre completo es:" + " " + mNombre + " " + mPApellido + " " + mSApellido + "\n Su edad es:"
+				+ " " + medad + "\n su imc es de: " + mIMC + " \n usted esta en " + mNivel
+				+ "\n ----------------------------------------------------";
+		return nombreCompleto;
+	}
+
+}

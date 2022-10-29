@@ -1,0 +1,28 @@
+package cl.generation;
+
+public class actividaCambioDatos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numeroInt = 200;
+		long numeroLong =  numeroInt;
+		
+		float numeroFloat= (float) numeroLong ;
+		
+		
+		System.out.println("el resultado es " + " " + numeroFloat);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

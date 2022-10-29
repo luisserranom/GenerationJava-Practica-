@@ -1,0 +1,22 @@
+package cl.generation26102022;
+
+import java.util.Scanner;
+
+public class CapturarDatos {
+
+	public static void main(String[] args) {
+		// capturar datos ingresados por el ususario
+		Scanner sc = new Scanner(System.in);
+		// calculo del IMC imc = kilos/(estatura*estatura)
+		System.out.println("Ingrese si peso en kilogramos");
+		Float peso = sc.nextFloat();
+		System.out.println("El peso del paciente es:" + " " + peso);
+		Float metro peso = sc.nextFloat() ;
+		System.out.println("El ESTATURAdel paciente es:" + " " + metro);
+		
+		sc.close();
+
+
+	}
+
+}

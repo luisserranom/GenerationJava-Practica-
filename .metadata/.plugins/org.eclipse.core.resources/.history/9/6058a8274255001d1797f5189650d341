@@ -1,0 +1,18 @@
+package cl.generation26102022;
+
+import java.util.Scanner;
+
+public class BucleDoWhileTest {
+
+	public static void main(String[] args) {
+		//do while
+		
+		do {
+			Scanner sc = new Scanner(System.in);
+			
+		} while (condition);
+
+		sc.close();
+	}
+
+}

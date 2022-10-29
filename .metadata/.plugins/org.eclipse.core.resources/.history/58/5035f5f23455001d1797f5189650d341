@@ -1,0 +1,10 @@
+package cl.generation26102022;
+
+public class ActividadExtracionDatos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

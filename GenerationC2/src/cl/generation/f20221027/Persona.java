@@ -1,0 +1,103 @@
+package cl.generation.f20221027;
+
+public class Persona {
+	//atributos
+	//atributos
+	private String nombre;
+	private String apellido;
+	private String email;
+	private String direccion;
+	private int edad;
+	private Integer numero;
+	private String nacionalidad;
+
+	/**
+	 * 
+	 * @param nombre
+	 * @param apellido
+	 * @param email
+	 * @param direccion
+	 * @param edad
+	 * @param numero
+	 * @param nacionalidad
+	 */
+	//Constructor inicialisado
+	public Persona(String nombre, String apellido, String email, String direccion, int edad, Integer numero,
+			String nacionalidad) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+		this.direccion = direccion;
+		this.edad = edad;
+		this.numero = numero;
+		this.nacionalidad = nacionalidad;
+		
+		
+	}
+	//Constructor vacio 
+	
+	 
+	public Persona() {
+		super();
+	}
+	//GETTER Y SETTERS (ACCESADOR Y MUTADOR )
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getApellido() {
+		return apellido;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getDireccion() {
+		return direccion;
+	}
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+	public int getEdad() {
+		return edad;
+	}
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	public Integer getNumero() {
+		return numero;
+	}
+	public void setNumero(Integer numero) {
+		this.numero = numero;
+	}
+	public String getNacionalidad() {
+		return nacionalidad;
+	}
+	public void setNacionalidad(String nacionalidad) {
+		this.nacionalidad = nacionalidad;
+	}
+	
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", direccion=" + direccion
+				+ ", edad=" + edad + ", numero=" + numero + ", nacionalidad=" + nacionalidad + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

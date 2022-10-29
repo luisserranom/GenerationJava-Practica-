@@ -1,0 +1,75 @@
+package cl.generation.f20221027;
+
+import java.util.Scanner;
+
+public class menu {
+
+	public static void main(String[] args) {
+		
+		//Menu de opciones
+		//calculadores con 4 operaciones basica
+		//terminar la ejecucion
+		//solicitar y capturar 2 numeros float
+		//imprimir resultados yguardar en una vriable 
+		//ofrecer opciones de repeticiones (Bucles)
+		//definir los metodos
+		//validaciones
+		//terminar la ejecucion
+		//limpiar lar variables
+		Scanner sc = new Scanner(System.in);
+		int opciones = 0;
+		int contadorErrores = 4;
+		
+		menu();
+		
+		do {
+			System.out.println("ingresa una opcion");
+			opciones = sc.nextInt();
+			
+			if( opciones == 0) {
+				System.out.println("Hasta Luego");
+				break;
+			}
+			
+			if(contadorErrores ==1 ) {
+				System.out.println("Agoto la cantidad de intentos");
+				break;
+			}else if(opciones<0 || opciones>4) {
+				contadorErrores --;
+				System.out.println("te quedan: "+contadorErrores+ " intentos");
+			}
+			
+		} while (opciones<0 || opciones>4);
+		System.out.println(con);
+		if(opciones == 0 || contadorErrores ==1) {
+			System.out.println("adios");
+		}else {
+			System.out.println("Se ha ingresado una opcion correcta"+ opciones);
+		}
+		
+		//calcularcon 4 operaciones basicas
+		//solicitar y capturar 2 numeros float
+		//imprimir resultados y guardar en una variable
+		//ofrecer opciones de repeticiones (bucles)
+		//definir los metodos
+		//validaciones
+		//limpiar las variables
+		
+		
+	}
+	public static void menu() {
+		System.out.println(" ************");
+		System.out.println("menu");
+		System.out.println(" ************");
+		System.out.println("*1 sumar *");
+		System.out.println("*2 restar *");
+		System.out.println("*3 multiplicar *");
+		System.out.println("*4 dividir *");
+		System.out.println("0 salir");
+		System.out.println(" ************");
+	}
+	
+	
+}
+
+

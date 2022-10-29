@@ -1,0 +1,28 @@
+package cl.generation.f20221027;
+
+public class PersonaObjeto {
+
+	public static void main(String[] args) {
+		//instancia de los objetos
+		Persona ArmandoHouse = new Persona();
+		Persona Luis = new Persona();
+		
+		ArmandoHouse.setNombre("Armando");
+		ArmandoHouse.setApellido("House");
+		ArmandoHouse.setDireccion("Armando@house.cl");
+		ArmandoHouse.setDireccion("San Bernado");
+		ArmandoHouse.setEdad(23);
+		ArmandoHouse.setNumero(923232323);
+		ArmandoHouse.setNacionalidad("Chilena");
+		
+		System.out.println("****Tus Datos****");
+		
+		System.out.println("Nombre" + ArmandoHouse.getNombre());
+		
+		
+		
+		
+
+	}
+
+}
